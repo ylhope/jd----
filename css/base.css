@@ -10,8 +10,7 @@ textarea { resize:none; } /*防止拖动*/
 img {border:0;	vertical-align:middle; }  /*  去掉图片低测默认的3像素空白缝隙*/
 table { border-collapse:collapse; }
 body {
-    font:12px/1.5 Arial,Verdana,"\5b8b\4f53";
-    font-size: 12px/1.5;
+    font:12px/1.5 "Microsoft YaHei",tahoma,arial,"Hiragino Sans GB",\\5b8b体,sans-serif;;
     color:#666;
     background:#fff
 }
@@ -23,8 +22,8 @@ body {
 .clearfix{
     *zoom:1;/*IE/7/6*/
 }
-a {color:#666; text-decoration:none; }
-a:hover{color:#C81623;}
+a{color:#666; text-decoration:none; }
+body a:hover {color:#C81623;}    
 h1,h2,h3,h4,h5,h6 {text-decoration:none;font-weight:normal;font-size:100%;}
 s,i,em{font-style:normal;text-decoration:none;}
 .col-red{color: #C81623!important;}
@@ -60,6 +59,10 @@ s,i,em{font-style:normal;text-decoration:none;}
     height: 30px;
     color: #999;
 }
+.head-top a{
+    color: #999;  
+    text-decoration:none; 
+}
 .logo{
     background: #fff url(../images/logo.png) 0 0 no-repeat;
     width: 190px;
@@ -82,4 +85,24 @@ s,i,em{font-style:normal;text-decoration:none;}
     height: 28px;
     line-height: 28px;
     color: #f10215;
+}
+.head-fore1 .head-register {
+    color: #f10215;
+}
+.head-right  li{
+    float: left;
+}
+.head-line{
+    margin: 11px 5px;
+    margin-bottom: 0;
+    overflow: hidden;
+    background-color: #ccc;
+    width: 1px;
+    height: 10px;
+}
+.head-fore1{
+    margin-right: 8px;
+}
+.head-fore2,.head-fore3,.head-fore4,.head-fore5,.head-fore6,.head-fore7,.head-fore8,.head-fore9{
+    padding:0 7px;
 }
