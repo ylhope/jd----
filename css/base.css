@@ -30,11 +30,11 @@ s,i,em{font-style:normal;text-decoration:none;}
 /*图标管理*/
 @font-face {
   font-family: 'iconfont';  /* project id 389145 */
-  src: url('//at.alicdn.com/t/font_389145_wo6ywc3veq6ez5mi.eot');
-  src: url('//at.alicdn.com/t/font_389145_wo6ywc3veq6ez5mi.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_389145_wo6ywc3veq6ez5mi.woff') format('woff'),
-  url('//at.alicdn.com/t/font_389145_wo6ywc3veq6ez5mi.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_389145_wo6ywc3veq6ez5mi.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_389145_5c5jya9xry66r.eot');
+  src: url('//at.alicdn.com/t/font_389145_5c5jya9xry66r.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_389145_5c5jya9xry66r.woff') format('woff'),
+  url('//at.alicdn.com/t/font_389145_5c5jya9xry66r.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_389145_5c5jya9xry66r.svg#iconfont') format('svg');
 }
 .iconfont{
     font-family:"iconfont" !important;
@@ -114,12 +114,52 @@ s,i,em{font-style:normal;text-decoration:none;}
     width: 1px;
     height: 10px;
 }
+.head-fore{
+    padding:0 7px;
+}
+.head-fore .iconfont {
+    right: 5px;
+    top: 10px;
+    width: 12px;
+    height: 12px;
+    line-height: 12px;
+}
 .head-fore1{
     margin-right: 8px;
 }
-.head-fore2,.head-fore3,.head-fore4,.head-fore5,.head-fore6,.head-fore7,.head-fore8,.head-fore9{
-    padding:0 7px;
+.head-fore8{
+    position: relative;
 }
+.mobile-qrcode-box{
+    position: absolute;
+    left: -2px;
+    width: 66px;
+    height: 66px;
+    border: 1px solid #cfcfcf;
+}
+/*这里其实不太懂,需要再看*/
+.mobile-qrcode-box::before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: -9px;
+    left: 50%;
+    margin-left: -5px;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #e4e4e4 #e4e4e4 #f6f6f6;
+}
+.mobile-qrcode{
+    margin: 4px auto;
+    width: 60px;
+    height: 60px;
+    background: #f6f6f6 url(../images/qr.png) 50% no-repeat;
+}
+
 /*头部导航结束*/
 
 /*头部开始*/
@@ -144,7 +184,6 @@ s,i,em{font-style:normal;text-decoration:none;}
     border: 1px solid #f10215;
     line-height: 25px;
     font-size: 14px;
-    box-sizing: content-box;
     color: #989898;
 }
 .search-photo-btn{
@@ -175,6 +214,7 @@ s,i,em{font-style:normal;text-decoration:none;}
     color: #fff;
     vertical-align: middle;
 }
+
 .magnifier{
     width: 22px;   
 }
@@ -222,5 +262,73 @@ s,i,em{font-style:normal;text-decoration:none;}
 }
 /*购物车结束*/
 
+/*热搜开始*/
+.top-hotword-box{
+    overflow: hidden;
+    position: absolute;
+    left: 320px;
+    top: 65px;
+    width: 550px;
+    height: 20px;
+    line-height: 20px;
+}
+.hotword{
+    float: left;
+    margin-right: 10px;
+    white-space: nowrap;
+    color: #999;
+}
+.hotword1{
+    color: #f10215;
+}
+/*热搜结束 */
 
+/*navigation导航开始*/
+.top-nav-box{
+    overflow: hidden;
+    position: absolute;
+    left: 200px;
+    bottom: 0;
+    width: 790px;
+    height: 40px;
+}
+.nav-item{
+    float: left;
+    margin-left: 27px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #555;
+}
+.nav-item1{
+    margin-left: 30px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #555;
+}
+.nav-line{
+    float: left;
+    overflow: hidden;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: -10px;
+    width: 1px;
+    height: 10px;
+    background-color: #ccc;
+}
+/*navigation导航结束*/
+
+/*京东扶贫开始*/
+.top-jdfp{
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    width: 190px;
+    height: 40px;
+    background: url(../images/jdfp.png) center no-repeat;
+}
+/*京东扶贫结束*/
 /*头部结束*/
